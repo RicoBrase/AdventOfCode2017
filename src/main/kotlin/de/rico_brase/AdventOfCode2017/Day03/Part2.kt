@@ -14,6 +14,8 @@ class Part2 {
         while((sqLength * sqLength) < input){
             sqLength += 2 // each "layer" of the square has two additional rows/columns: top & bottom; left & right
         }
+        
+        // ^ square size is way too oversized; not optimized for part 2. Might change, if I know a better way to solve that problem
 
         val centerRowColumn = (sqLength - 1) / 2 // calculate the center (0-indexed)
         
