@@ -12,12 +12,14 @@ class Part2 {
         var sum = 0
 
         for (i in input.indices) {
+            // calculate the index of the char to match(half the length of input added to current index)
             val newIndex: Int = if((i + (input.length / 2)) >= input.length){
-                        (i + (input.length / 2)) - input.length
+                        (i + (input.length / 2)) - input.length // subtract length of input if necessary
                     } else {
                         (i + (input.length / 2))
                     }
             
+            // if both chars match eachother, add the current chars value to the captcha
             if (input[i] == input[newIndex]) {
                 sum += input[i].toString().toInt()
             }

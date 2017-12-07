@@ -34,6 +34,9 @@ class Part2 {
     fun calcChecksum(input: Array<IntArray>): Int{
         var checksum = 0
         
+        // Check each possible combination in each row
+        // If one number of them can be divided evenly by another number of the combinations - add the division result to the checksum 
+        
         for(row: IntArray in input){
             for(i: Int in row.indices){
                 

@@ -27,6 +27,8 @@ class Part1 {
 
     fun calcChecksum(input: Array<IntArray>): Int{
         var checksum = 0
+        
+        // Add the difference of the biggest and the smallest number of each row to the checksum
         for (row: IntArray in input){
             val minNum: Int = row.min()!!
             val maxNum: Int = row.max()!!
