@@ -25,12 +25,6 @@ class Part2 {
             intArrayOf(37, 1069, 166, 1037, 172, 258, 1071, 90, 497, 1219, 145, 1206, 143, 153, 1067, 510)
     )
     
-    val testInput: Array<IntArray> = arrayOf(
-            intArrayOf(5, 9, 2, 8),
-            intArrayOf(9, 4, 7, 3),
-            intArrayOf(3, 8, 6, 5)
-    )
-    
     fun calcChecksum(input: Array<IntArray>): Int{
         var checksum = 0
         
