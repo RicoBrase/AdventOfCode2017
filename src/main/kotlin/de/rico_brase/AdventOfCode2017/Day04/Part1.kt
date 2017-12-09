@@ -1,6 +1,5 @@
 package de.rico_brase.AdventOfCode2017.Day04
 
-import java.io.File
 import java.io.InputStream
 
 fun main(args: Array<String>) {
